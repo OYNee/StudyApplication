@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <ImageButton
+        android:id="@+id/stopWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:background="@null"
+        app:srcCompat="@drawable/chick_main1"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignTop="@+id/studyDiary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/studyDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:background="@null"
+        app:srcCompat="@drawable/chick_main4"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/chick_main3"
+        android:background="@null"
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/stopWatch"
+        android:layout_alignStart="@+id/stopWatch" />
+
+    <ImageButton
+        android:id="@+id/autoManner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/chick_main2"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <ImageButton
+        android:id="@+id/imgMannerOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="onClick"
+        android:background="@null"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/maanner_mark_extra_final"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/studyDiary"
+        android:layout_alignEnd="@+id/studyDiary" />
+
+    <TextView
+        android:id="@+id/tvStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="STOPWATCH"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignRight="@+id/stopWatch"
+        android:layout_alignEnd="@+id/stopWatch" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDY DIARY"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_below="@+id/imgMannerOff"
+        android:layout_alignLeft="@+id/autoManner"
+        android:layout_alignStart="@+id/autoManner" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/tvStop"
+        android:layout_alignStart="@+id/tvStop"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manners Maketh Man"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/autoManner"
+        android:layout_alignLeft="@+id/studyDiary"
+        android:layout_alignStart="@+id/studyDiary" />
+
+</RelativeLayout>

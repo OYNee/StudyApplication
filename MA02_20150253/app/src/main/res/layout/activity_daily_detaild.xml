@@ -1,0 +1,111 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="할 일" />
+
+            <TextView
+                android:id="@+id/tvDeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvDeDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="메모" />
+
+            <TextView
+                android:id="@+id/tvDeMemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0"
+                android:ems="10" />
+
+
+            <TextView
+                android:id="@+id/tvDday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/btnUpdate"
+                android:layout_width="190dp"
+                android:layout_height="89dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                app:srcCompat="@drawable/change"
+                android:onClick="onClick" />
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="190dp"
+                android:layout_height="89dp"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/cancel"
+                android:background="@null"
+                android:layout_weight="0.13"
+                android:onClick="onClick" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

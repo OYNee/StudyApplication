@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:showWeekNumber="false" />
+
+    <ImageButton
+        android:id="@+id/btnSel"
+        android:layout_width="169dp"
+        android:layout_height="86dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/ok" />
+
+</LinearLayout>

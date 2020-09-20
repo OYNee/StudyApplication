@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:hint="시작할 공부 이름"
+        android:lines = "1"
+        android:inputType="textPersonName"
+        android:padding="10dp" >
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etNewTotal"
+            android:layout_width="154dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:ems="10"
+            android:lines = "1"
+            android:hint="전체 분량"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvNewStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center"
+                android:hint="시작일" />
+
+            <TextView
+                android:id="@+id/tvNewEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center"
+                android:hint="목표 종료일" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="324dp">
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="190dp"
+            android:layout_height="89dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="35dp"
+            android:background="@null"
+            app:srcCompat="@drawable/save"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/btnAddCancel"
+            android:layout_width="190dp"
+            android:layout_height="89dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/cancel"
+            android:background="@null"
+            android:layout_weight="0.13"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btnAdd"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick" />
+    </RelativeLayout>
+</LinearLayout>

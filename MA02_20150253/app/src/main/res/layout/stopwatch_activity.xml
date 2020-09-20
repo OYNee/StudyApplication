@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    android:layout_centerHorizontal="false"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="false"
+        android:layout_gravity="center"
+        android:textSize="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+
+
+    <ImageButton
+        android:id="@+id/imgBtnGoHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:onClick="onClick"
+        android:background="@null"
+        app:srcCompat="@drawable/history"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/btnReset"
+        android:layout_width="190dp"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/reset"
+        android:background="@null"
+        android:layout_below="@+id/btnSave"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="190dp"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/save"
+        android:background="@null"
+        android:layout_below="@+id/chronometer"
+        android:layout_alignLeft="@+id/btnReset"
+        android:layout_alignStart="@+id/btnReset"
+        android:onClick="onClick"
+        android:layout_marginTop="23dp" />
+
+</RelativeLayout>

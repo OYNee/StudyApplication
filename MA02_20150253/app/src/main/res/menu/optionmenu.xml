@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/all"
+        android:title="전체 목록"
+        />
+    <item android:id="@+id/complete"
+        android:title="완료한 공부 목록"
+        android:icon="@drawable/chick_round"
+        />
+    <item android:id="@+id/inProgress"
+        android:title="진행 중인 공부 목록"
+        />
+    <item android:id="@+id/addStudy"
+        android:title="해야할 공부 추가"
+        />
+    <item android:id="@+id/search"
+        android:title="공부 검색"
+        />
+
+</menu>

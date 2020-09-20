@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MA02_20150253</string>
+    <string name="encyc_api_url">https://openapi.naver.com/v1/search/encyc.xml?display=10&amp;start=1&amp;sort=sim&amp;query=</string>
+    <string name="local_api_url">https://openapi.naver.com/v1/search/local.xml?display=30&amp;start=1&amp;sort=random&amp;query=</string>
+    <string name="client_id">LZzxSLXjkZ19le5qhFr3</string>
+    <string name="client_secret">TepSddVOmG</string>
+</resources>

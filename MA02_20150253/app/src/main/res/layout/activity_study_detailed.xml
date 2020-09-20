@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tvDName"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:hint="시작할 공부 이름"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="462dp">
+
+        <TextView
+            android:id="@+id/tvDTotal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/etProgress"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:ems="10"
+            android:hint="전체 분량"
+            android:inputType="number"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etProgress"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:gravity="center_horizontal|center"
+            android:hint="시작일"
+            android:layout_below="@+id/tvPercentage"
+            android:layout_alignLeft="@+id/tvEndDate"
+            android:layout_alignStart="@+id/tvEndDate" />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center"
+            android:hint="목표 종료일"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/tvStartDate"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvDTotal"
+            android:layout_alignRight="@+id/tvDTotal"
+            android:layout_below="@+id/etProgress"
+            android:layout_marginTop="29dp"
+            android:text="TextView" />
+
+        <ImageButton
+            android:id="@+id/btnOK"
+            android:layout_width="190dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/save"
+            android:background="@null"
+            android:layout_below="@+id/tvEndDate"
+            android:layout_alignLeft="@+id/btnUpdate"
+            android:layout_alignStart="@+id/btnUpdate"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="190dp"
+            android:layout_height="89dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnOK"
+            android:background="@null"
+            android:onClick="onClick"
+            android:paddingRight="5dp"
+            app:srcCompat="@drawable/change" />
+
+    </RelativeLayout>
+
+</LinearLayout>
